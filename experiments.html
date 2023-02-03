@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jerry Lu">
+    <title>Jerry Lu's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  
+  <body>
+
+    <header>
+      <h1>Experiments</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+        <a href="experiments.html">Experiments</a>
+      </nav>
+      <br>
+    </header>
+
+    <main>
+      <figure>
+        <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" alt="HTML Logo">
+        <figcaption>HTML Logo</figcaption>
+      </figure>
+      <label for="OS">Current OS?</label>
+      <select id="OS">
+        <optgroup label="Phone OS">
+          <option value="IOS">IOS</option>
+          <option value="Android">Android</option>
+        </optgroup>
+        <optgroup label="Computer OS">
+          <option value="Windows">Windows</option>
+          <option value="Mac">Mac</option>
+          <option value="Linux">Linux</option>
+        </optgroup>
+      </select>
+      <br>
+
+      <label for="device">Device?</label>
+      <input list="devices" name="device" id="device">
+
+      <datalist id="devices">
+        <option value="Phone">
+        <option value="Desktop">
+        <option value="Other">
+      </datalist>
+      <br><br>
+      
+      <picture>
+        <source media="(min-width:900px)" srcset="https://images.vexels.com/media/users/3/157318/isolated/lists/2782b0b66efa5815b12c9c637322aff3-desktop-computer-icon-computer.png">
+        <img src="https://freeiconshop.com/wp-content/uploads/edd/phone-flat.png" alt="Phone Icon">
+      </picture>
+      <br><br>
+
+      <table>
+        <caption>What is supported:</caption>
+        <colgroup>
+          <col class="browser">
+          <col class="device">
+        </colgroup>
+        <tr>
+          <th>Browsers</th>
+          <th>Devices</th>
+        </tr>
+        <tr>
+          <td>Chrome</td>
+          <td>Computer</td>
+        </tr>
+        <tr>
+          <td>Safari</td>
+          <td>Mobile</td>
+        </tr>
+      </table>
+      
+      <svg width="30" height="30">
+        <circle cx="10" cy="10" r="10" fill="blue"></circle>
+      </svg>
+
+      <canvas id="canvas"></canvas>
+      <script>
+        let canvas = document.getElementById("canvas");
+        let ctx = canvas.getContext("2d");
+        ctx.fillStyle = "green"
+        ctx.fillRect(50, 50, 50, 50);
+      </script>
+      <br>
+
+      <pre>beware    
+        that   one or more below is
+             a rick roll
+      </pre>
+      <audio controls>
+        <source src="https://archive.org/download/NeverGonnaGiveYouUp/jocofullinterview41.mp3" type="audio/mpeg">
+        This browser doesn't support the audio tag.
+      </audio>
+      <br><br>
+      <video width="160" height="90" controls>
+        <source src="https://ia801509.us.archive.org/10/items/Rick_Astley_Never_Gonna_Give_You_Up/Rick_Astley_Never_Gonna_Give_You_Up.mp4" type="video/mp4">
+        This browser doesn't support the video tag.
+      </video>
+
+      <template id="template">
+        <figure>
+          <img src="https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo.png" alt="JS Logo">
+          <figcaption>Huge JavaScript Logo that can be loaded after the initial page load</figcaption>
+        </figure>
+      </template>
+    </main>
+
+    <footer>
+      <br>
+      <hr>
+      <nav>
+        <a href="contact.html"><b>Contact me!</b></a>
+      </nav>
+    </footer>
+    
+  </body>
+
+</html>
