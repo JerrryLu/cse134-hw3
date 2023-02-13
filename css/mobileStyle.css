@@ -9,9 +9,10 @@ body {
 
 header {
   flex-direction: row;
-
   height: var(--navH);
   font-size: calc(var(--navH)/4);
+  position: sticky;
+  top: 0;
 }
 
 header h1 {
@@ -19,16 +20,6 @@ header h1 {
   width: calc(100vw - var(--navBarW));
   text-align: center;
   font-size: calc(var(--navH)/3);
-}
-
-/*Keeps the container with the navBar on top when scrolling */
-.sideBar {
-  position: sticky;
-  top: 0;
-}
-
-.mainContent {
-  margin: 2vw 2vw 0 2vw;
 }
 
 .navBar {

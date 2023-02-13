@@ -22,10 +22,6 @@ header h1 {
   font-size: calc(var(--navBarW)/5);
 }
 
-.mainContent {
-  margin: 2vh 2vw 0 2vw;
-}
-
 .navBar {
   flex-direction: column;
   margin: 1vh 0 0 0;
