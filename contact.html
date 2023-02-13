@@ -6,22 +6,30 @@
     <meta name="author" content="Jerry Lu">
     <title>Jerry Lu's Portfolio</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/browserStyle.css" media="(min-width: 640px)">
+    <link rel="stylesheet" href="css/mobileStyle.css" media="(width < 640px)">
   </head>
   
   <body>
 
+    <section class="sideBar">
+
     <header>
       <h1>Contact</h1>
       <nav>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="education.html">Education</a>
-        <a href="skills.html">Skills</a>
-        <a href="contact.html">Contact</a>
-        <a href="experiments.html">Experiments</a>
+        <ul class="navBar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li> 
+          <li><a href="education.html">Education</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li id="activePage"><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
-      <br>
     </header>
+
+    </section>
+
+    <section class="mainContent">
 
     <main>
       <div class="contactInfo">
@@ -51,13 +59,7 @@
       </form>
     </main>
 
-    <footer>
-      <br>
-      <hr>
-      <nav>
-        <a href="contact.html"><b>Contact me!</b></a>
-      </nav>
-    </footer>
+    </section>
     
   </body>
 

@@ -1,0 +1,95 @@
+:root {
+  --navBarW: 12vw;
+  --navColor: #d7e1fa;
+}
+
+@font-face {
+  font-family: kaushan;
+  src: url("../fonts/kaushanscript-regular.woff") format("woff");
+  font-display: fallback;
+}
+
+@keyframes shake {
+  0% {transform: rotate(0deg);}
+  20% {transform: rotate(-3deg);}
+  40% {transform: rotate(3deg);}
+  60% {transform: rotate(-2deg);}
+  80% {transform: rotate(2deg);}
+  100% {transform: rotate(0deg);}
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  position: sticky;
+  align-items: center;
+  min-height: 100vh;
+
+  width: var(--navBarW);
+  font-size: calc(var(--navBarW)/8);
+
+  background-color: var(--navColor);
+
+}
+
+header h1 {
+  display: block;
+  font-family: kaushan, "mv boli", cursive;
+  margin: 1vh 0 4vh 0;
+  font-size: calc(var(--navBarW)/5);
+  animation: shake 1s;
+}
+
+footer {
+  margin-bottom: 2vh;
+}
+
+#activePage {
+  font-weight: bold;
+  background-color:#7da2ff;
+  pointer-events: none;
+}
+
+.mainContent {
+  flex: 1;
+  margin: 2vh 2vw 0 2vw;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: column;
+  margin: 1vh 0 0 0;
+  height: 60vh;
+  list-style-position: outside;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.navBar li {
+  width: var(--navBarW);
+  text-align: center;
+  margin: 0;
+  background: linear-gradient(to right, white 50%, transparent 50%) right;
+  background-size: 200% 100%;
+  transition: all 0.1s ease;
+}
+
+.navBar li:hover {
+  background-position: left;
+}
+
+.navBar li a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 4vh 0 4vh 0;
+}
