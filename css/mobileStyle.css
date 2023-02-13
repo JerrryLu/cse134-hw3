@@ -1,79 +1,24 @@
 :root {
   --navH: 10vw;
   --navBarW: 75vw;
-  --navColor: #d7e1fa;
-}
-
-@font-face {
-  font-family: kaushan;
-  src: url("../fonts/kaushanscript-regular.woff") format("woff");
-  font-display: fallback;
-}
-
-@font-face {
-  font-family: nintendo;
-  src: url("../fonts/RoSpritendoSemiboldBeta-vmVwZ.otf") format("opentype");
-  font-display: fallback;
-}
-
-@keyframes shake {
-  0% {transform: rotate(0deg);}
-  20% {transform: rotate(-3deg);}
-  40% {transform: rotate(3deg);}
-  60% {transform: rotate(-2deg);}
-  80% {transform: rotate(2deg);}
-  100% {transform: rotate(0deg);}
 }
 
 body {
-  display: flex;
   flex-direction: column;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1em;
 }
 
 header {
-  display: flex;
   flex-direction: row;
-  align-items: center;
 
   height: var(--navH);
   font-size: calc(var(--navH)/4);
-
-  background-color: var(--navColor);
-
 }
 
 header h1 {
-  font-family: kaushan, "mv boli", cursive;
   margin: 0;
   width: calc(100vw - var(--navBarW));
   text-align: center;
   font-size: calc(var(--navH)/3);
-  animation: shake 1s;
-}
-
-h2 {
-  font-family: nintendo, Arial, Helvetica, sans-serif;
-}
-
-footer {
-  margin-bottom: 4vh;
-}
-
-iframe {
-  display: block;
-  width: 80vw;
-  height: 50vh;
-  text-align: center;
-  margin: auto;
-}
-
-#activePage {
-  font-weight: bold;
-  background-color:#7da2ff;
-  pointer-events: none;
 }
 
 /*Keeps the container with the navBar on top when scrolling */
@@ -83,39 +28,23 @@ iframe {
 }
 
 .mainContent {
-  flex: 1;
   margin: 2vw 2vw 0 2vw;
 }
 
 .navBar {
-  display: flex;
   flex-direction: row;
   margin: 0;
-  list-style-position: outside;
-  list-style-type: none;
   width: var(--navBarW);
   height: var(--navH);
   padding: 0;
 }
 
 .navBar li {
-  text-align: center;
-  margin: 0;
-  background: linear-gradient(to right, white 50%, transparent 50%) right;
-  background-size: 200% 100%;
-  transition: all 0.1s ease;
   width: calc(var(--navBarW)/5);
 }
 
-.navBar li:hover {
-  background-position: left;
-}
-
 .navBar li a {
-  display: block;
   text-align: center;
-  color: black;
-  text-decoration: none;
   height: var(--navH);
   line-height: var(--navH);
 }
