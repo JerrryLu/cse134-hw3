@@ -13,9 +13,12 @@ header {
   font-size: calc(var(--navBarW)/7);
 }
 
-iframe {
-  width: 80vw;
-  height: 50vh;
+section picture img {
+  width: 65vw;
+}
+
+img[src="images/git_congress_mobile.webp"] {
+  width: 50vw;
 }
 
 header h1 {

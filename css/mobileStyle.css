@@ -13,9 +13,8 @@ header {
   font-size: calc(var(--navH)/4);
 }
 
-iframe {
-  width: 80vw;
-  height: 80vh;
+section picture img {
+  width: 70vw;
 }
 
 header h1 {

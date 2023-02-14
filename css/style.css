@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: kaushan;
-  src: url("../fonts/kaushanscript-regular.woff") format("woff");
+  src: url("../fonts/kaushanscript-regular.woff2") format("woff");
   font-display: fallback;
 }
 
@@ -47,14 +47,6 @@ h2 {
   font-family: nintendo, Arial, Helvetica, sans-serif;
 }
 
-iframe {
-  display: block;
-  text-align: center;
-  margin: auto;
-  border: 2px solid black;
-  border-radius: 12px;
-}
-
 details {
   margin-bottom: 2vh;
 }
@@ -64,19 +56,35 @@ picture img {
   border-radius: 12px;
 }
 
+section picture img {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
 h2 img {
   width: 2em;
   height: 2em;
 }
 
+li span {
+  font-style: italic;
+  font-weight: bold;
+}
+
 summary img {
   width: 3em;
   height: 3em;
+  margin-bottom: -0.5em;
 }
 
 img[src="images/ucsd.webp"] {
   width: 4em;
   height: 4em;
+}
+
+main {
+  flex: 1;
 }
 
 #activePage {
@@ -86,6 +94,8 @@ img[src="images/ucsd.webp"] {
 }
 
 .mainContent {
+  display: flex;
+  flex-direction: column;
   flex: 1;
 }
 
