@@ -8,18 +8,24 @@ body {
 
 header {
   flex-direction: column;
-  top: 0;
-  position: sticky;
-  min-height: 100vh;
-
+  height: 100vh;
   width: var(--navBarW);
-  font-size: calc(var(--navBarW)/8);
+  font-size: calc(var(--navBarW)/7);
+}
+
+iframe {
+  width: 80vw;
+  height: 50vh;
 }
 
 header h1 {
   display: block;
   margin: 1vh 0 4vh 0;
   font-size: calc(var(--navBarW)/5);
+}
+
+.mainContent {
+  margin: 2vw 2vw 4vh 2vw;
 }
 
 .navBar {
