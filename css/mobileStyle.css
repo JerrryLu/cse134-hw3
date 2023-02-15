@@ -1,0 +1,52 @@
+:root {
+  --navH: 10vw;
+  --navBarW: 75vw;
+}
+
+body {
+  flex-direction: column;
+}
+
+header {
+  flex-direction: row;
+  height: var(--navH);
+  font-size: calc(var(--navH)/4);
+}
+
+section picture img {
+  width: 70vw;
+}
+
+header h1 {
+  margin: 0;
+  width: calc(100vw - var(--navBarW));
+  text-align: center;
+  font-size: calc(var(--navH)/3);
+}
+
+picture img {
+  display: block;
+  margin: auto;
+}
+
+.mainContent {
+  margin: 2vw 5vw 4vh 5vw;
+}
+
+.navBar {
+  flex-direction: row;
+  margin: 0;
+  width: var(--navBarW);
+  height: var(--navH);
+  padding: 0;
+}
+
+.navBar li {
+  width: calc(var(--navBarW)/5);
+}
+
+.navBar li a {
+  text-align: center;
+  height: var(--navH);
+  line-height: var(--navH);
+}
