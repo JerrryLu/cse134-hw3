@@ -85,7 +85,7 @@ img[src="images/ucsd.webp"] {
 }
 
 main {
-  flex: 1;
+  flex: 1 1 0;
 }
 
 #activePage {
@@ -97,7 +97,7 @@ main {
 .mainContent {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  flex: 1 1 0;
 }
 
 .navBar {
@@ -111,7 +111,7 @@ main {
   margin: 0;
   background: linear-gradient(to right, white 50%, transparent 50%) right;
   background-size: 200% 100%;
-  transition: all 0.1s ease;
+  transition: background 0.1s ease;
 }
 
 .navBar li:hover {
