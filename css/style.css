@@ -85,7 +85,7 @@ img[src="images/ucsd.webp"] {
 }
 
 main {
-  flex: 1 1 0;
+  flex: 1;
 }
 
 #activePage {
@@ -97,7 +97,7 @@ main {
 .mainContent {
   display: flex;
   flex-direction: column;
-  flex: 1 1 0;
+  flex: 1;
 }
 
 .navBar {
