@@ -72,10 +72,11 @@ li span {
   font-weight: bold;
 }
 
-summary img {
+summary img, p img {
   width: 3em;
   height: 3em;
   margin-bottom: -0.5em;
+  margin-right: 0.5em;
 }
 
 img[src="images/ucsd.webp"] {
