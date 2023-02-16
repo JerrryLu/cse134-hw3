@@ -24,6 +24,11 @@ header h1 {
   font-size: calc(var(--navH)/3);
 }
 
+img[src="images/Jerry_Lu_Face.jpg"] {
+  display: block;
+  margin: auto;
+}
+
 picture img {
   display: block;
   margin: auto;
