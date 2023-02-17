@@ -1,5 +1,5 @@
 :root {
-  --navBarW: 12vw;
+  --nav-bar-width: 12vw;
 }
 
 body {
@@ -9,8 +9,8 @@ body {
 header {
   flex-direction: column;
   height: 100vh;
-  width: var(--navBarW);
-  font-size: calc(var(--navBarW)/7);
+  width: var(--nav-bar-width);
+  font-size: calc(var(--nav-bar-width)/7);
 }
 
 section picture img {
@@ -24,7 +24,7 @@ img[src="images/git_congress_mobile.webp"] {
 header h1 {
   display: block;
   margin: 1vh 0 4vh 0;
-  font-size: calc(var(--navBarW)/5);
+  font-size: calc(var(--nav-bar-width)/5);
 }
 
 .mainContent {
@@ -39,7 +39,7 @@ header h1 {
 }
 
 .navBar li {
-  width: var(--navBarW);
+  width: var(--nav-bar-width);
 }
 
 .navBar li a {

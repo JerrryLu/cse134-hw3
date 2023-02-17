@@ -1,6 +1,6 @@
 :root {
-  --navH: 10vw;
-  --navBarW: 75vw;
+  --nav-bar-height: 10vw;
+  --nav-bar-width: 75vw;
 }
 
 body {
@@ -9,8 +9,8 @@ body {
 
 header {
   flex-direction: row;
-  height: var(--navH);
-  font-size: calc(var(--navH)/4);
+  height: var(--nav-bar-height);
+  font-size: calc(var(--nav-bar-height)/4);
 }
 
 section picture img {
@@ -19,9 +19,9 @@ section picture img {
 
 header h1 {
   margin: 0;
-  width: calc(100vw - var(--navBarW));
+  width: calc(100vw - var(--nav-bar-width));
   text-align: center;
-  font-size: calc(var(--navH)/3);
+  font-size: calc(var(--nav-bar-height)/3);
 }
 
 img[src="images/Jerry_Lu_Face.jpg"] {
@@ -41,17 +41,17 @@ picture img {
 .navBar {
   flex-direction: row;
   margin: 0;
-  width: var(--navBarW);
-  height: var(--navH);
+  width: var(--nav-bar-width);
+  height: var(--nav-bar-height);
   padding: 0;
 }
 
 .navBar li {
-  width: calc(var(--navBarW)/5);
+  width: calc(var(--nav-bar-width)/5);
 }
 
 .navBar li a {
   text-align: center;
-  height: var(--navH);
-  line-height: var(--navH);
+  height: var(--nav-bar-height);
+  line-height: var(--nav-bar-height);
 }

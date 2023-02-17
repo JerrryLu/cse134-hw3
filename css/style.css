@@ -1,8 +1,8 @@
 :root {
-  --navColor: #d7e1fa;
-  --picBorderColor: #724b4b;
-  --activePageColor: #7da2ff;
-  --boxShadowColor: #b2b1b1;
+  --nav-color: #d7e1fa;
+  --pic-border-color: #724b4b;
+  --active-page-color: #7da2ff;
+  --box-shadow-color: #b2b1b1;
 }
 
 @font-face {
@@ -36,7 +36,7 @@ body {
 header {
   display: flex;
   align-items: center; 
-  background-color: var(--navColor);
+  background-color: var(--nav-color);
   top: 0;
   position: sticky;
 }
@@ -60,14 +60,14 @@ img[src="images/Jerry_Lu_Face.jpg"] {
 }
 
 picture img, img[src="images/Jerry_Lu_Face.jpg"] {
-  border: 10px solid var(--picBorderColor);
+  border: 10px solid var(--pic-border-color);
   border-style: outset double;
-  box-shadow: -3px 3px 6px 3px var(--boxShadowColor);
+  box-shadow: -3px 3px 6px 3px var(--box-shadow-color);
   transition: box-shadow 0.3s ease;
 }
 
 picture img:hover, img[src="images/Jerry_Lu_Face.jpg"]:hover {
-  box-shadow: 0px 0px 6px 3px var(--boxShadowColor);
+  box-shadow: 0px 0px 6px 3px var(--box-shadow-color);
 }
 
 section picture img {
@@ -104,7 +104,7 @@ main {
 
 #activePage {
   font-weight: bold;
-  background-color: var(--activePageColor);
+  background-color: var(--active-page-color);
   pointer-events: none;
 }
 
