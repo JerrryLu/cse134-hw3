@@ -1,5 +1,8 @@
 :root {
   --navColor: #d7e1fa;
+  --picBorderColor: rgba(75, 25, 25, 0.784);
+  --activePageColor: #7da2ff;
+  --boxShadowColor: rgb(178, 177, 177);
 }
 
 @font-face {
@@ -57,8 +60,14 @@ img[src="images/Jerry_Lu_Face.jpg"] {
 }
 
 picture img, img[src="images/Jerry_Lu_Face.jpg"] {
-  border: 10px solid rgba(75, 25, 25, 0.784);
+  border: 10px solid var(--picBorderColor);
   border-style: outset double;
+  box-shadow: -3px 3px 6px 3px var(--boxShadowColor);
+  transition: box-shadow 0.3s ease;
+}
+
+picture img:hover, img[src="images/Jerry_Lu_Face.jpg"]:hover {
+  box-shadow: 0px 0px 6px 3px var(--boxShadowColor);
 }
 
 section picture img {
@@ -95,7 +104,7 @@ main {
 
 #activePage {
   font-weight: bold;
-  background-color:#7da2ff;
+  background-color: var(--activePageColor);
   pointer-events: none;
 }
 
