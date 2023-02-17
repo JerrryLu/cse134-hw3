@@ -1,6 +1,6 @@
 :root {
   --navColor: #d7e1fa;
-  --picBorderColor: rgba(75, 25, 25, 0.784);
+  --picBorderColor: rgb(114, 75, 75);
   --activePageColor: #7da2ff;
   --boxShadowColor: rgb(178, 177, 177);
 }
