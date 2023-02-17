@@ -17,6 +17,11 @@ section picture img {
   width: 70vw;
 }
 
+img[src="images/Jerry_Lu_Face.jpg"] {
+  width: 70vw;
+  height: 70vw;
+}
+
 header h1 {
   margin: 0;
   width: calc(100vw - var(--nav-bar-width));
